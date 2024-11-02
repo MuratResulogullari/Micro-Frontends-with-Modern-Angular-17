@@ -1,0 +1,16 @@
+
+ng version
+npm i @angular-architects/native-federation@17.1.8
+
+create workspace
+ng new my-workspace --create-application=false
+
+ng generate application
+
+host-workspace> ng build --project name
+host-workspace> ng serve --project name
+
+ng add @angular-architects/native-federation --project shell --port 4200 --type dynamic-host
+ng add @angular-architects/native-federation --project mfe1 --port 4201 --type remote
+ng add @angular-architects/native-federation --project mfe2 --port 4202 --type remote
+
